@@ -1,14 +1,14 @@
 const max2 = (a, b, c) => {
     if (a > b && a > c) {
 
-        return a + ' ' + "je větší"
+        return a
     } else if (b > a && b > c) {
 
-        return b + ' ' + "je větší"
-    } else if (c > a && c > b) {
+        return b
 
-        return c + ' ' + "je větší"
     }
+    return c
+
 }
-console.log(max2(6, 8, 10));
-console.log(max2(15, 100, 800));
+console.log(max2(6, 8, 10) + ' ' + "je větší");
+console.log(max2(15, 100, 800) + ' ' + "je větší");
